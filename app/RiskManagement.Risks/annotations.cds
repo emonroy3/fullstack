@@ -5,32 +5,32 @@ annotate service.Risks with @(
         Data : [
             {
                 $Type : 'UI.DataField',
-                Label : 'title',
+                Label : '{i18n>Title}',
                 Value : title,
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'prio',
+                Label : '{i18n>Priority}',
                 Value : prio,
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'descr',
+                Label : '{i18n>Description}',
                 Value : descr,
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'impact',
+                Label : '{i18n>Impact}',
                 Value : impact,
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'criticality',
+                Label : '{i18n>Criticality}',
                 Value : criticality,
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'supplier_BusinessPartner',
+                Label : 'Supplier',
                 Value : supplier_BusinessPartner,
             },
         ],
@@ -46,33 +46,34 @@ annotate service.Risks with @(
     UI.LineItem : [
         {
             $Type : 'UI.DataField',
-            Label : 'title',
+            Label : '{i18n>Title}',
             Value : title,
         },
         {
             $Type : 'UI.DataField',
-            Label : 'prio',
+            Label : '{i18n>Priority}',
             Value : prio,
         },
         {
             $Type : 'UI.DataField',
-            Label : 'descr',
+            Label : '{i18n>Description}',
             Value : descr,
         },
         {
             $Type : 'UI.DataField',
-            Label : 'impact',
+            Label : '{i18n>Impact}',
             Value : impact,
+            ![@UI.Hidden],
         },
         {
             $Type : 'UI.DataField',
-            Label : 'criticality',
+            Label : '{i18n>Criticality}',
             Value : criticality,
         },
         {
             $Type : 'UI.DataField',
             Value : supplier_BusinessPartner,
-            Label : 'supplier_BusinessPartner',
+            Label : 'Supplier',
         },
     ],
 );
